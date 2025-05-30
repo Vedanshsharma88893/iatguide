@@ -21,7 +21,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        
+
         .chart-container {
             position: relative;
             width: 100%;
@@ -31,44 +31,44 @@
             height: 300px;
             max-height: 400px;
         }
-        
+
         @media (min-width: 640px) {
             .chart-container {
                 height: 350px;
             }
         }
-        
+
         @media (min-width: 768px) {
             .chart-container {
                 height: 400px;
             }
         }
-        
+
         .table-cell {
             padding: 8px;
             border: 1px solid #e5e7eb;
             text-align: left;
         }
-        
+
         .table-header {
             background-color: #f3f4f6;
             font-weight: bold;
         }
-        
+
         .nav-link {
             transition: color 0.3s ease;
         }
-        
+
         .nav-link.active {
             color: #0284c7;
             font-weight: bold;
             border-bottom: 2px solid #0284c7;
         }
-        
+
         .section-fade-in {
             animation: fadeIn 0.8s ease-out;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -79,25 +79,25 @@
                 transform: translateY(0);
             }
         }
-        
+
          ::-webkit-scrollbar {
             width: 8px;
         }
-        
+
          ::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 10px;
         }
-        
+
          ::-webkit-scrollbar-thumb {
             background: #cbd5e1;
             border-radius: 10px;
         }
-        
+
          ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
-        
+
         .loading-spinner {
             border: 4px solid #f3f3f3;
             /* Light grey */
@@ -109,7 +109,7 @@
             animation: spin 1s linear infinite;
             margin: 10px auto;
         }
-        
+
         @keyframes spin {
             0% {
                 transform: rotate(0deg);
@@ -176,7 +176,7 @@
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="bg-sky-100 p-4 rounded-lg shadow">
                     <h3 class="font-semibold text-sky-700 mb-2">📈 Projected Trend</h3>
-                    <p class="text-sm text-neutral-600">Cutoffs for IAT 2025 are expected to be <span class="font-bold">notably higher</span> than in previous years. This is driven by a significant rise in applicants and a perceived easier exam difficulty in 2025 compared to 2024.</p>
+                    <p class="text-sm text-neutral-600">Cutoffs for IAT 2025 are expected to be <span class="font-bold">significantly higher</span> than in previous years. This is driven by a substantial rise in applicants and a perceived easier exam difficulty in 2025 compared to 2024. Aim for scores well above past minimums.</p>
                 </div>
                 <div class="bg-sky-100 p-4 rounded-lg shadow">
                     <h3 class="font-semibold text-sky-700 mb-2">🎯 Strategic Aim</h3>
@@ -305,12 +305,12 @@
             <h2 class="text-2xl sm:text-3xl font-bold text-sky-700 mb-4">IAT 2025 Predictions Hub</h2>
             <p class="text-neutral-600 leading-relaxed mb-6">
                 This section provides consolidated predictions for IAT 2025, including expected minimum marks to qualify for counseling, score-to-rank correlations, and institute-specific cutoffs. Remember, these are predictions and actual cutoffs may vary. Aiming for
-                "Good Scores" is generally recommended for better chances. For reference, a safe score of 200+ would likely secure a top rank (1–80), whereas scores below ~95 may not gain admission (rank>1500).
+                "Good Scores" is generally recommended for better chances. For reference, a safe score of 200+ would likely secure a top rank (1–80), whereas scores below ~100 may not gain admission (rank>1500).
             </p>
 
             <div class="mb-8">
                 <h3 class="text-xl font-semibold text-sky-600 mb-3">Overall Expected Minimum Marks by Category (IAT 2025)</h3>
-                <p class="text-neutral-600 mb-3">These are the expected score ranges (out of 240) needed to qualify for counseling in IAT 2025. Final admission depends on rank and seat allocation, and specific institutes, especially top-tier ones, will likely require higher scores.</p>
+                <p class="text-neutral-600 mb-3">These are the expected score ranges (out of 240) needed to qualify for counseling in IAT 2025. Final admission depends on rank and seat allocation, and specific institutes, especially top-tier ones, will likely require higher scores. For General category, a safe score for marginal admission will be in the low 120s or higher.</p>
                 <div class="chart-container bg-gray-50 p-2 rounded-md">
                     <canvas id="minMarksByCategory2025Chart"></canvas>
                 </div>
@@ -335,7 +335,7 @@
 
             <div class="mb-8">
                 <h3 class="text-xl font-semibold text-sky-600 mb-3">Institute-Wise Expected Cutoff Marks (General Category, IAT 2025)</h3>
-                <p class="text-neutral-600 mb-3">These predictions for institute-specific cutoffs (General category) consolidate ranges from various expert sources. Aim for scores in the higher end of these ranges, especially for popular IISERs.</p>
+                <p class="text-neutral-600 mb-3">These predictions for institute-specific cutoffs (General category) consolidate ranges from various expert sources. Aim for scores in the higher end of these ranges, especially for popular IISERs. IISER Pune/Bhopal could require ~170+ marks.</p>
                 <div class="overflow-x-auto bg-gray-50 p-2 rounded-md">
                     <table class="min-w-full border-collapse border border-neutral-300">
                         <thead class="table-header">
@@ -348,13 +348,12 @@
                         <tbody id="instituteCutoffs2025TableBody"></tbody>
                     </table>
                 </div>
-                <p class="text-sm text-neutral-600 mt-2">Minimum score needed for *any* IISER (General): Aim for <span class="font-bold">110+ marks</span>.</p>
+                <p class="text-sm text-neutral-600 mt-2">Minimum score needed for *any* IISER (General): Aim for <span class="font-bold">125+ marks</span>.</p>
             </div>
 
             <div class="mb-8">
                 <h3 class="text-xl font-semibold text-sky-600 mb-3">"Good Score" Targets by Institute and Category (IAT 2025)</h3>
-                <p class="text-neutral-600 mb-3">"Good Scores" are advisable target scores for a higher probability of admission to preferred institutes. These are generally higher than minimum cutoffs. Analysts suggest General category candidates needed roughly 110–150 marks in 2024
-                    to secure seats at top IISERs, highlighting the need for higher scores.</p>
+                <p class="text-neutral-600 mb-3">"Good Scores" are advisable target scores for a higher probability of admission to preferred institutes. These are generally higher than minimum cutoffs. Analysts suggest General category candidates will need higher scores in 2025 than previous years to secure seats at top IISERs.</p>
                 <div class="mb-4 flex flex-wrap gap-2">
                     <select id="goodScoreInstituteFilter" class="p-2 border border-neutral-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
                         <option value="All">All Institutes (Good Scores)</option>
@@ -390,7 +389,7 @@
                     <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
                         <h4 class="font-semibold text-sky-700 mb-1">IIT Madras (BS Programs)</h4>
                         <p class="text-sm text-neutral-600">Target Rank (General): <span class="font-bold">Up to Rank 35</span></p>
-                        <p class="text-sm text-neutral-600">Good Scores: Gen 195, OBC 180, SC 140, ST 120</p>
+                        <p class="text-sm text-neutral-600">Good Scores: Gen 170-180, OBC 155-165, SC 125-135, ST 105-115</p>
                     </div>
                 </div>
             </div>
@@ -484,6 +483,7 @@
                 <li><a href="https://scoop.eduncle.com/iiser-admission-total-seats" target="_blank" class="text-sky-600 hover:underline">Eduncle - IISER Admission Total Seats</a></li>
                 <li>Official IISER Admission Website (various notifications and past year data)</li>
                 <li>Expert analyses and student forums regarding IAT exam difficulty and trends.</li>
+                <li>Internal Recalibration based on IAT 2025 expected trends</li>
             </ul>
             <p class="mt-2 text-neutral-500">
                 *Please note: Predictions are estimates and actual cutoffs may vary based on final applicant performance, seat matrix changes, and counselling rounds.*
@@ -591,31 +591,31 @@
                 marks: 80,
                 rank: 7000
             }],
-            // Updated based on your research
+            // UPDATED BASED ON RESEARCH
             minMarksByCategory2025: [{
                 category: "General",
-                min: 120,
-                max: 130
+                min: 125, // Adjusted from 120, to reflect "low 120s or higher"
+                max: 135
             }, {
                 category: "OBC-NCL",
-                min: 100,
-                max: 110
+                min: 105, // Slightly increased
+                max: 115
             }, {
                 category: "SC",
-                min: 65,
-                max: 75
+                min: 70, // Slightly increased
+                max: 80
             }, {
                 category: "ST",
-                min: 65,
-                max: 75
+                min: 70, // Slightly increased
+                max: 80
             }, {
                 category: "EWS",
-                min: 110,
-                max: 120
+                min: 115, // Slightly increased
+                max: 125
             }, {
                 category: "PwD",
-                min: 60,
-                max: 72
+                min: 65, // Slightly increased
+                max: 75
             }],
             marksVsRank2025: [{
                 marks: 220,
@@ -642,101 +642,106 @@
                 marks: 80,
                 rank: "5001+"
             }],
-            // Updated based on your research - Consolidated predicted ranges
+            // UPDATED BASED ON RESEARCH
             instituteCutoffs2025_General: [{
                 institute: "IISER Pune",
-                predictedRange: "125-135",
+                predictedRange: "160-180", // Adjusted to reflect "170+" target for top IISERs
                 collegeduniaSafeScore: "190+"
             }, {
                 institute: "IISER Kolkata (BS-MS)",
-                predictedRange: "110-125",
+                predictedRange: "130-145", // Increased from 110-125
                 collegeduniaSafeScore: "180+"
             }, {
                 institute: "IISER Kolkata (Comp. & Data Sci.)",
-                predictedRange: "150-160",
+                predictedRange: "170-180", // Increased from 150-160
                 collegeduniaSafeScore: "-"
             }, {
                 institute: "IISER Mohali",
-                predictedRange: "115-120",
+                predictedRange: "135-145", // Increased from 115-120
                 collegeduniaSafeScore: "170+"
             }, {
                 institute: "IISER Bhopal (BS-MS)",
-                predictedRange: "115-125",
+                predictedRange: "155-175", // Adjusted to reflect "170+" target for top IISERs
                 collegeduniaSafeScore: "175+"
             }, {
                 institute: "IISER Bhopal (Eco. Sci.)",
-                predictedRange: "130+",
+                predictedRange: "145+", // Increased from 130+
                 collegeduniaSafeScore: "-"
             }, {
                 institute: "IISER Bhopal (Engg. Sci.)",
-                predictedRange: "140+",
+                predictedRange: "155+", // Increased from 140+
                 collegeduniaSafeScore: "-"
             }, {
                 institute: "IISER Tirupati (BS-MS)",
-                predictedRange: "105-115",
+                predictedRange: "125-135", // Increased from 105-115
                 collegeduniaSafeScore: "160+"
             }, {
                 institute: "IISER Tirupati (Eco. & Stat. Sci.)",
-                predictedRange: "130+",
+                predictedRange: "145+", // Increased from 130+
+                collegeduniaSafeScore: "-"
+            }, {
+                institute: "IISER Tirupati (Data Science & Engg.)", // Added this new program
+                predictedRange: "145-155", // Estimated range for new specialized program
                 collegeduniaSafeScore: "-"
             }, {
                 institute: "IISER Thiruvananthapuram",
-                predictedRange: "105-115",
+                predictedRange: "125-135", // Increased from 105-115
                 collegeduniaSafeScore: "160+"
             }, {
                 institute: "IISER Berhampur",
-                predictedRange: "105-115",
+                predictedRange: "120-130", // Increased from 105-115
                 collegeduniaSafeScore: "150+"
             }],
+            // UPDATED BASED ON RESEARCH
             goodScores: [{
                 institute: "PUN",
-                GEN: 180,
-                OBC: 165,
-                SC: 120,
-                ST: 100
+                GEN: 190, // Adjusted from 180, aiming higher with cutoff shift
+                OBC: 175,
+                SC: 130,
+                ST: 110
             }, {
                 institute: "BHO",
-                GEN: 160,
+                GEN: 175, // Adjusted from 160, aiming higher with cutoff shift
+                OBC: 160,
+                SC: 115,
+                ST: 95
+            }, {
+                institute: "KOL",
+                GEN: 165, // Adjusted from 155
+                OBC: 150,
+                SC: 110,
+                ST: 90
+            }, {
+                institute: "MOH",
+                GEN: 160, // Adjusted from 150
                 OBC: 145,
                 SC: 105,
                 ST: 85
             }, {
-                institute: "KOL",
-                GEN: 155,
-                OBC: 140,
+                institute: "TPT",
+                GEN: 150, // Adjusted from 140
+                OBC: 135,
                 SC: 100,
                 ST: 80
             }, {
-                institute: "MOH",
-                GEN: 150,
-                OBC: 135,
-                SC: 95,
-                ST: 75
-            }, {
-                institute: "TPT",
-                GEN: 140,
-                OBC: 125,
-                SC: 90,
-                ST: 70
-            }, {
                 institute: "TVM",
-                GEN: 135,
-                OBC: 120,
-                SC: 88,
-                ST: 68
+                GEN: 145, // Adjusted from 135
+                OBC: 130,
+                SC: 98,
+                ST: 78
             }, {
                 institute: "BPR",
-                GEN: 130,
-                OBC: 115,
-                SC: 85,
-                ST: 65
+                GEN: 140, // Adjusted from 130
+                OBC: 125,
+                SC: 95,
+                ST: 75
             }],
             newPrograms2025: [
                 "IISER Bhopal: B.Tech in Engineering Sciences (with specialization)",
                 "IISER Bhopal: BS in Economic Sciences",
                 "IISER Kolkata: BS in Chemical Sciences (with specialization)",
                 "IISER Tirupati: BS in Earth & Environmental Sciences",
-                "IISER Tirupati: BS in Data Science & Engineering"
+                "IISER Tirupati: BS in Data Science & Engineering" // Added this to list
             ]
         };
 
@@ -1036,15 +1041,14 @@
                 appData.goodScores.filter(d => d.institute === filterInstitute);
 
             filteredData.forEach(row => {
-                tableBody.innerHTML += `
-                    <tr>
-                        <td class="table-cell">${row.institute}</td>
-                        <td class="table-cell">${row.GEN}</td>
-                        <td class="table-cell">${row.OBC}</td>
-                        <td class="table-cell">${row.SC}</td>
-                        <td class="table-cell">${row.ST}</td>
-                    </tr>
-                `;
+                let rowHtml = '<tr>';
+                rowHtml += `<td class="table-cell">${row.institute}</td>`;
+                rowHtml += `<td class="table-cell">${row.GEN}</td>`;
+                rowHtml += `<td class="table-cell">${row.OBC}</td>`;
+                rowHtml += `<td class="table-cell">${row.SC}</td>`;
+                rowHtml += `<td class="table-cell">${row.ST}</td>`;
+                rowHtml += '</tr>';
+                tableBody.innerHTML += rowHtml;
             });
 
             // Populate filter dropdown
@@ -1163,13 +1167,14 @@
 
                 IAT 2025 Expected Marks vs. Rank Ranges:
                 ${appData.marksVsRank2025.map(d => `- Marks ${d.marks}: Rank ${d.rank}`).join('\n')}
-                (Note: A safe score of 200+ would likely secure a top rank (1–80), whereas scores below ~95 may not gain admission (rank>1500).)
+                (Note: A safe score of 200+ would likely secure a top rank (1–80), whereas scores below ~100 may not gain admission (rank>1500).)
 
                 Overall Expected Minimum Marks by Category (IAT 2025 to qualify for counseling):
                 ${appData.minMarksByCategory2025.map(d => `- ${d.category}: ${d.min}-${d.max} marks`).join('\n')}
 
                 Institute-Wise Expected Cutoff Marks (General Category, IAT 2025):
                 ${appData.instituteCutoffs2025_General.map(d => `- ${d.institute}: Predicted Range ${d.predictedRange}, Collegedunia Safe Score ${d.collegeduniaSafeScore}`).join('\n')}
+                (Minimum score needed for *any* IISER (General): Aim for 125+ marks.)
 
                 "Good Score" Targets by Institute and Category (IAT 2025):
                 ${appData.goodScores.map(i => {
@@ -1178,7 +1183,7 @@
 
                 IISc Bangalore & IIT Madras (BS Programs) Specifics:
                 - IISc Bangalore Target Score: 210-220 marks, Target Rank (General): Top 20 (up to Rank 38). Good Scores: Gen 210, OBC 195, SC 150, ST 135.
-                - IIT Madras (BS Programs) Target Rank (General): Up to Rank 35. Good Scores: Gen 195, OBC 180, SC 140, ST 120.
+                - IIT Madras (BS Programs) Target Rank (General): Up to Rank 35. Good Scores: Gen 170-180, OBC 155-165, SC 125-135, ST 105-115.
 
                 General context:
                 - IAT 2025 exam difficulty was perceived as easier than 2024, leading to score inflation.
