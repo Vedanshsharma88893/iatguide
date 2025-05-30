@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main page -->
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Main page with trailing slash -->
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide/</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Section anchors for better indexing -->
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#understanding-iat</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#factors-driving-cutoffs</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#historical-data</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#predictions-2025</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#cutoff-predictions</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#iisc-iit-cutoffs</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#admission-insights</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://vedanshsharma88893.github.io/iatguide#strategic-recommendations</loc>
+        <lastmod>2025-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
